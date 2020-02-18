@@ -40,7 +40,7 @@
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Books</a>
                 <div class="dropdown-menu">
                     <a href="addnewbook.html" class="dropdown-item">Add</a>
-                    <a href="displayallbooksservlet" class="dropdown-item">List</a>
+                    <a href="displayallbooks.html" class="dropdown-item">List</a>
                     <a href="updatebookcopies.html" class="dropdown-item">Update</a>
                     <div class="dropdown-divider"></div>
                     <a href="searchbybookid.html" class="dropdown-item">Search By ID</a>
@@ -81,9 +81,14 @@
       </nav>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1>Library</h1> 
-          <p>Reading Books Keeps our heart Peace</p> 
-    
+          <h2><center>Search By BookId </center></h2>
+        <form action="searchByBookIdServlet" method="GET">
+            <div class="form-group">
+              <label for="number">BookId:</label>
+              <input type="number" class="form-control" placeholder="Enter BookId" id="number" required autofocus>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
     </div>   
 </body>

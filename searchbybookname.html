@@ -81,8 +81,14 @@
       </nav>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1>Library</h1> 
-          <p>Reading Books Keeps our heart Peace</p> 
+          <h2><center>Search By BookName </center></h2>
+          <form action="searchByBookNameServlet" method="GET">
+              <div class="form-group">
+                <label for="name">BookName:</label>
+                <input type="name" class="form-control" placeholder="Enter Bookname" id="name" required autofocus>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
     
         </div>
     </div>   
